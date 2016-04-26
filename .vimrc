@@ -1,8 +1,8 @@
-"
 set nu
 set relativenumber
 syntax on
 set ic
+set mouse=a
 
 "" show current mode on the status bar 
 set showmode
@@ -19,6 +19,8 @@ set incsearch
 "--- Set 'tabstop' and 'shiftwidth' to whatever you prefer and use 'expandtab'.  This way you will always insert spaces.'
 
 "Number of spaces that a <Tab> in the file counts for.
+"Our benevolent dictator has chosen 2 space indention for the node core, so
+"you would do well to follow his choice.
 set tabstop=2
 " Use the appropriate number of spaces to insert a <Tab>.
 set expandtab
@@ -40,7 +42,7 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
-let g:nerdtree_tabs_open_on_console_startup=1
+"let g:nerdtree_tabs_open_on_console_startup=1
 
 " Gif config
 map  / <Plug>(easymotion-sn)
