@@ -109,6 +109,9 @@ Plug 'pangloss/vim-javascript'
 Plug 'nathanaelkane/vim-indent-guides'
 Plug 'bling/vim-airline'
 
+"theme
+Plug 'dracula/vim'
+
 " All of your Plugins must be added before the following line
 call plug#end()            " required"
 filetype plugin indent on     " required!
@@ -124,11 +127,12 @@ filetype plugin indent on     " required!
 "
 "
 
-let g:solarized_termcolors=256
-colorscheme solarized
-syntax enable
-if has('gui_running')
-  set background=light
-else
-  set background=dark
-endif
+color dracula
+"let g:solarized_termcolors=256
+"colorscheme solarized
+"syntax enable
+"if has('gui_running')
+"  set background=light
+"else
+"  set background=dark
+"endif
