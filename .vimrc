@@ -3,6 +3,7 @@ set relativenumber
 syntax on
 set ic
 set mouse=a
+set updatetime=250
 
 "" show current mode on the status bar 
 set showmode
@@ -28,7 +29,6 @@ set expandtab
 set shiftwidth=2
 
 "---
-
 
 
 "colorscheme hemisu
@@ -57,24 +57,30 @@ map  N <Plug>(easymotion-prev)
 
 call plug#begin('~/.vim/plugged')
 
+
 " let vim-plug manage Vundle
 " required! 
 
 " My plugin here:
 "
 " original repos on GitHub
-"Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 "Plug 'easymotion/vim-easymotion'
 "Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plug 'tpope/vim-rails.git'
 Plug 'mattn/emmet-vim'
+Plug 'digitaltoad/vim-pug'
+Plug 'posva/vim-vue'
+"Plug 'sheerun/vim-polyglot'
 "
 "Nodejs 'omnifunc' function of vim
-Plug 'ahayman/vim-nodejs-complete'
+"Plug 'ahayman/vim-nodejs-complete'
 Plug 'moll/vim-node'
 "Plug 'marijnh/tern_for_vim'
 
 Plug 'altercation/vim-colors-solarized'
+
+
 
 "" vim-scripts repos
 Plug 'L9'
@@ -84,6 +90,7 @@ Plug 'L9'
 "" Git repos on your local machine (i.e. when working on your own Plug)
 "Plug 'file:///Users/gmarik/path/to/Plug'
 "" ...
+
 Plug 'The-NERD-tree'
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Syntastic'
@@ -104,13 +111,31 @@ Plug 'garbas/vim-snipmate'
 Plug 'othree/vim-autocomplpop'
 Plug 'ctrlp.vim'
 
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+
 Plug 'jelera/vim-javascript-syntax'
 Plug 'pangloss/vim-javascript'
 Plug 'nathanaelkane/vim-indent-guides'
+
+"There's already powerline, why yet another statusline?
+"poewrline: written in python
+"airline: 100% vimscript; no python needed.
+
+Plug 'airblade/vim-gitgutter'
+
 Plug 'bling/vim-airline'
+
+"Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 "theme
 Plug 'dracula/vim'
+
+
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'ryanoasis/vim-devicons'
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required"
@@ -126,6 +151,25 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle commands are not allowed.
 "
 "
+"
+"
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline:h18
+set encoding=utf-8
+let g:airline_powerline_fonts = 1
+let g:javascript_plugin_flow = 1
+
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+"let g:syntastic_javascript_checkers = ['eslint']
+"let g:syntastic_javascript_eslint_exec = 'eslint'
+"set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
+"
+set laststatus=2
 
 color dracula
 "let g:solarized_termcolors=256
@@ -136,3 +180,5 @@ color dracula
 "else
 "  set background=dark
 "endif
+
+set showcmd
