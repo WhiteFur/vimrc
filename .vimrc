@@ -1,3 +1,4 @@
+set noswapfile
 set nu
 set relativenumber
 syntax on
@@ -79,7 +80,9 @@ Plug 'moll/vim-node'
 "Plug 'marijnh/tern_for_vim'
 
 Plug 'altercation/vim-colors-solarized'
+Plug 'AndrewRadev/linediff.vim'
 
+Plug 'mileszs/ack.vim'
 
 
 "" vim-scripts repos
@@ -136,6 +139,9 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'ryanoasis/vim-devicons'
+Plug 'scrooloose/nerdcommenter'
+Plug 'ervandew/supertab'
+
 
 " All of your Plugins must be added before the following line
 call plug#end()            " required"
@@ -169,6 +175,11 @@ let g:syntastic_check_on_wq = 0
 "let g:syntastic_javascript_eslint_exec = 'eslint'
 "set guifont=Droid\ Sans\ Mono\ for\ Powerline\ Plus\ Nerd\ File\ Types:h11
 "
+" use ack.vim with ag
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
+
 set laststatus=2
 
 color dracula
