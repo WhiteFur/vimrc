@@ -66,6 +66,7 @@ call plug#begin('~/.vim/plugged')
 "
 " original repos on GitHub
 Plug 'tpope/vim-fugitive'
+Plug 'gregsexton/gitv'
 "Plug 'easymotion/vim-easymotion'
 "Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plug 'tpope/vim-rails.git'
@@ -102,7 +103,7 @@ Plug 'mkitt/tabline.vim'
 Plug 'easymotion/vim-easymotion'
 
 "----for auto pair
-Plug 'delimitMate.vim'
+"Plug 'delimitMate.vim'
 
 "-------garbas/vim-snipmate
 Plug 'MarcWeber/vim-addon-mw-utils'
@@ -111,7 +112,7 @@ Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 "-------
 "
-Plug 'othree/vim-autocomplpop'
+"Plug 'othree/vim-autocomplpop'
 Plug 'ctrlp.vim'
 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -167,8 +168,8 @@ let g:javascript_plugin_flow = 1
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_always_populate_loc_list = 0
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 "let g:syntastic_javascript_checkers = ['eslint']
