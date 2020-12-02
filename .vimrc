@@ -70,6 +70,8 @@ Plug 'gregsexton/gitv'
 "Plug 'easymotion/vim-easymotion'
 "Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plug 'tpope/vim-rails.git'
+
+"zen coding
 Plug 'mattn/emmet-vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'posva/vim-vue'
