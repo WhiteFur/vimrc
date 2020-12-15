@@ -89,7 +89,7 @@ Plug 'mileszs/ack.vim'
 
 
 "" vim-scripts repos
-Plug 'L9'
+Plug 'eparreno/vim-l9'
 "Plug 'FuzzyFinder'
 "" non-GitHub repos
 "Plug 'git://git.wincent.com/command-t.git'
@@ -97,9 +97,9 @@ Plug 'L9'
 "Plug 'file:///Users/gmarik/path/to/Plug'
 "" ...
 
-Plug 'The-NERD-tree'
+Plug 'preservim/nerdtree'
 Plug 'jistr/vim-nerdtree-tabs'
-Plug 'Syntastic'
+Plug 'vim-syntastic/syntastic'
 "Plug 'Valloric/YouCompleteMe'
 Plug 'mkitt/tabline.vim'
 Plug 'easymotion/vim-easymotion'
@@ -115,8 +115,7 @@ Plug 'garbas/vim-snipmate'
 "-------
 "
 "Plug 'othree/vim-autocomplpop'
-Plug 'ctrlp.vim'
-
+Plug 'ctrlpvim/ctrlp.vim' 
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
@@ -196,3 +195,4 @@ color dracula
 "endif
 
 set showcmd
+
