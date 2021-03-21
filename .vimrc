@@ -43,7 +43,7 @@ set nocompatible              " be iMproved
 filetype off                  " required!
 
 map <Leader>n <plug>NERDTreeTabsToggle<CR>
-"let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_open_on_console_startup=1
 
 " Gif config
 map  / <Plug>(easymotion-sn)
@@ -70,8 +70,6 @@ Plug 'gregsexton/gitv'
 "Plug 'easymotion/vim-easymotion'
 "Plug 'rstacruz/sparkup', {'rtp': 'vim/'}
 "Plug 'tpope/vim-rails.git'
-
-"zen coding
 Plug 'mattn/emmet-vim'
 Plug 'digitaltoad/vim-pug'
 Plug 'posva/vim-vue'
@@ -195,4 +193,3 @@ color dracula
 "endif
 
 set showcmd
-
