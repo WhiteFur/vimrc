@@ -111,6 +111,12 @@ Plug 'tomtom/tlib_vim'
 Plug 'honza/vim-snippets'
 Plug 'garbas/vim-snipmate'
 "-------
+
+"-------typescript
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+"------
+
 "
 "Plug 'othree/vim-autocomplpop'
 Plug 'ctrlpvim/ctrlp.vim' 
